@@ -1,4 +1,5 @@
 #!/bin/bash
+
 a=1
 
 while [ $a != "0" ]; do
@@ -6,14 +7,14 @@ while [ $a != "0" ]; do
 	read a
 
 	if [ $a -eq 0 ]; then
-    		break;
-    	elif [ $a -lt 0 ] || [ $a -eq 1 ] || [ $a -gt 9 ]; then
-    		echo "The number of inputs must be between 2 and 9."
-    	else
-    		for ((k=1;k<=9;k++)) do
-    			echo "$a * $k = `expr $a \* $k `"
-    		done
-    	fi
+		break;
+	elif [ $a -ge 2 ] && [ $a -le 9 ]; then
+		for ((k=1;k<=9;k++)) do
+			echo "$a * $k = `expr $a \* $k `"
+		done
+	else 
+		echo "The number of inputs must be between 2 and 9."
+	fi
 done
 echo Exit
 

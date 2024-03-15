@@ -5,6 +5,6 @@ case "$1" in
 	us) echo "Washington" ;;
 	cn) echo "Beijing" ;;
 	jp) echo "Tokyo" ;;
-	*) echo "Enter the country name~!" ;;
+	*) echo "Enter the country name~!!"
 esac
 

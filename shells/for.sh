@@ -2,6 +2,7 @@
 
 for k in L I N U X
 do
-	echo "$k"
-
+	echo -n "$k"
 done
+echo 
+

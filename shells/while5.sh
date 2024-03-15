@@ -8,7 +8,7 @@ if [ $# -eq 0 ]; then
 else
 	while [[ 10 -gt $row ]]; do
 		echo $row
-		row=`echo "$row"1 | bc`
+		row = `echo "$row" + 1 | bc`
 	done
 fi
 

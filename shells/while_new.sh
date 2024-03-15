@@ -7,8 +7,7 @@ while [ $a != "0" ]; do
 	read a
 
 	if [ $a != "0" ]; then
-		for k in 1 2 3 4 5 6 7 8 9 
-		do
+		for ((k=1;k<=9;k++)) do 
 			echo "$a * $k = `expr $a \* $k `"
 		done
 	fi

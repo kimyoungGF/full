@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$#" -eq 0 ]; then 
+if [ $# -eq 0 ]; then
 	echo "Enter the country name~!!"
 else
 	case "$1" in
@@ -8,6 +8,7 @@ else
 		us) echo "Washington" ;;
 		cn) echo "Beijing" ;;
 		jp) echo "Tokyo" ;;
-		*) echo "Your enter => $1 is not list" ;;
+		*) echo "Your entry => $1 is not in list."
 	esac
 fi
+
